@@ -43,6 +43,8 @@ void task2(int *y)
     // 执行完写入后关闭管道2
     close(pipe2[1]);
 }
+
+// aaa
 void task3(int *num)
 { // 线程3的执行函数原型，计算f(x,y)=f(x)+f(y)，即计算两者之和
     printf("task3 is running!\n");
