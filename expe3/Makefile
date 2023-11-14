@@ -3,9 +3,6 @@
 opt = -g -c
 
 all: 
-%.o: %.c
-	gcc $(opt) -std=c99 $< -o $@
-%: %.o
-	gcc $< -l pthread -o $@
+	gcc -fdiagnostics-color=always -g /root/ClassSystem/expe3/expe3.c -o /root/ClassSystem/expe3/expe3 -std=c99 -lreadline -lncurses /usr/lib64/libreadline.so
 clean:
 	rm tpipe  pipe *.o
